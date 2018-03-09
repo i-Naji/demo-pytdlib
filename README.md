@@ -30,5 +30,5 @@ def updt_hndlr(update):
                 bot.send_message(msg.chat_id, "*PING*", reply_to_message_id=msg.id, parse_mode="md", action=True)
 
 bot.set_update_handler(updt_hndlr)
-bot.idle()
+#bot.idle()
 ```
