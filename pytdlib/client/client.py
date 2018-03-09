@@ -284,7 +284,7 @@ class Client:
             from_background,
             reply_markup,
             inputMessageText(
-                formattedText,
+                formatted_text,
                 disable_web_page_preview,
                 True
             )
