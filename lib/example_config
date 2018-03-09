@@ -1,0 +1,65 @@
+# This is an empty config file
+# Feel free to put something here
+
+default_profile = "main";
+
+main =  {
+  # connect to totally separate telegram environment
+  # it is used only for tests
+  # false is default value
+  test = false;
+  
+  # folder containing data for this profile
+  # default value is profile name
+  config_directory = "main";
+  
+  # language code. Some telegram notifications
+  # may use it. Default is "en"
+  language_code = "en";
+
+  # use file db. Allows files reuse after restart
+  # default value is true
+  use_file_db = true;
+  
+  # use file garbage collector. Deletes files unused for 30 days
+  # default value is true
+  use_file_gc = true;
+
+  # use file names as specified in document description
+  # instead telegram-bot can use random names
+  # default value is true
+  file_readable_names = true;
+
+  # allow accepting and creating secret chats
+  # default value is true
+  use_secret_chats = true;
+
+  # use chat info db. Allow to send messages to chats instantly after restart
+  # default value is true
+  use_chat_info_db = true;
+
+  # use message db
+  # default value is true
+  use_message_db = true;
+
+  # logname. if not starts with '/' is relative to config_directory
+  # if empty log to stderr
+  # default value is empty
+  logname = "log.txt";
+
+  # log verbosity. Default value is 0
+  verbosity = 2;
+  
+  api_id = xxxx
+  api_hash = xxxxxxxxxxxx
+};
+
+test_dc1 = {
+  test = true;
+  verbosity = 100;
+  logname = "log.txt";
+};
+
+# in many cases default values are OK, so config is empty
+second = {
+};
